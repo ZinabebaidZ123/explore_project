@@ -1,0 +1,318 @@
+/* global style */
+:root{
+    --primary-color: #FB8F1D;
+    --text-main-color: #B8BECD;
+    --text-sec-color:#848484;
+    --text-alt-color:#4A4C53;
+    --footer-bg-color: #F9F9FB;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+a{
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.225rem;
+    text-decoration: none;
+    color: var(--text-main-color);
+    font-family: 'Mulish', sans-serif;
+
+}
+ul{
+    list-style: none;
+}
+h1 , h2 ,h4{
+    font-family: 'Playfair Display', serif;
+}
+h2{
+    font-size: 2.25rem;
+    line-height:3.125rem;
+
+  
+}
+h4{
+    /* line-height: 3rem; */
+    font-size: 1.6rem;
+    font-weight: bold;
+    
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.063rem;
+    line-height: 1.875rem;
+}
+button{
+    background-color: var(--primary-color);
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 0.5rem 2.875rem;
+    
+}
+section{
+    padding-top: 15.875rem;
+}
+@media (min-width:300px) {
+    html{
+          font-size: 9px;
+    }
+    img{
+        width: 60%;
+    }
+   
+}
+
+@media (min-width:567px) {
+    html{
+          font-size: 11px;
+    }
+    img{
+        width: 70%;
+    }
+   
+}
+@media (min-width:768px){
+    html{
+        font-size: 13px;
+    }
+    img{
+        width: 80%;
+    }
+  
+}
+@media (min-width:1200px){
+    html{
+        font-size: 16px;
+    }
+    img{
+        width: 100%;
+    }
+}
+/*navbar******************************************************************************************/
+.navbar{
+    padding-top: 2.313rem;
+}
+.navbar .nav-item .active{
+    color:#000;
+    font-weight: bold;
+}
+.navbar .regs-btn{
+    background-color: var(--primary-color);
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 0.5rem 2.875rem;
+}
+.navbar .logIn-btn{
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 2.875rem;
+    color: var(--primary-color);
+    background-color: transparent;
+
+}
+/*banner section**********************************************************************************/
+.banner{
+    padding-top: 2.125rem;
+    /* height: 80vh; */
+}
+.banner__content h1{
+    font-size: 4rem;
+    padding-top: 3.125rem;
+}
+.banner__content h4{
+   padding-top: 4.625rem;
+   font-weight: bold;
+}
+.banner__content h4::after{
+    content: "";
+    display: block;
+    width: 10%;
+    height: 0.25rem;
+    margin: 1.313rem   0  3rem;
+    background-color: #000;
+}
+.banner__content select{
+    border-radius: 0.5rem;
+    border: 1px solid  var(--text-main-color);
+    font-size: 0.9rem;
+    color: var(--text-alt-color);
+}
+.banner__content button{
+    margin-top: 2.5rem;
+}
+.banner .banner_img{
+    width: 100%;
+   
+}
+
+@media (min-width:300px) and (max-width:992px){
+    .banner{
+        text-align: center;
+        
+    }
+    .banner h4::after {
+        margin:2rem auto;
+        text-align: center;
+    }
+    .banner .banner__img img{
+        display: none;
+    }
+   
+    .banner__content{
+        margin: auto;
+    }
+    .banner .select{
+        margin: auto !important;
+        width: 80%;
+        
+    }
+}
+
+/*explore section and guides section*********************************************************************************/
+.explore .explore__img img{
+    max-width: 37.188rem;
+}
+.explore__content h2 , .guide__content h2{
+    margin-bottom: 1.25rem;
+}
+.explore__content p , .guide__content p{
+    margin-bottom:2.063rem;
+}
+/***media query for explore*************************************************************************************/
+@media(min-width:300px) and (max-width:992px){
+    .explore , .guide{
+        text-align: center;
+    }
+    .explore .explore__img , .guide .guide__img{
+        margin: auto;
+        text-align: center;
+    }
+    .explore .explore__img img ,  .guide .guide__img img{
+        margin-bottom: 1.5rem;
+    }
+    .explore .explore__content , .guide .guide__content{
+        padding: 2rem;
+    }
+}
+
+/*feature section************************************************************************************************/
+
+.feature .feature__header{
+    margin-bottom: 1.25rem;
+}
+.feature .feature__header h5 a{
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+.feature .feature__img img{
+    max-width: 16.313rem;
+}
+@media (min-width:300px) and (max-width:992px){
+    .feature{
+        text-align: center;
+    }
+    .feature header{
+        flex-direction: column !important;
+    }
+    .feature .feature__img img{
+        margin-bottom: 1.5rem;
+    }
+    
+} 
+
+/*testmonial section*****************************************************************************************/
+.testemonial__content p{
+    margin-bottom: 1.25rem;
+}
+.testemonial__content a{
+    color: var(--text-alt-color);
+}
+.testemonial__img {
+    padding-top: 3.75rem;
+}
+.testemonial__img img{
+    max-width: 24rem;
+}
+/*media for testemonial section***************************************************************************/
+@media (min-width:300px) and (max-width:992px){
+   .testemonial{
+    text-align: center;
+   }
+}
+
+/***trend section****************************************************************************************/
+.trend{
+    /* padding-top: 11.125rem; */
+    padding-bottom: 16.938rem;
+}
+.trend img{
+    width: 18.75rem;
+    height: 13rem;
+}
+
+.trend h2{
+    margin-bottom: 2.688rem;
+}
+.trend h4{
+    font-size: 1.188rem;
+    line-height: 1.875rem;
+}
+.trend p{
+    font-size: 0.938rem;
+    line-height: 1.875rem;
+    /* color: var(--text-main-color);
+     */
+     color:#7D7987;
+
+}
+.trend a{
+    color: var(--primary-color);
+}
+@media (min-width:300px) and (max-width:992px){
+    .trend{
+        text-align: center;
+    }
+   .row
+   {
+    margin: auto;
+    text-align: center;
+   }
+}
+/*footer section*******************************************************************************************/
+footer{
+    padding-top: 4.375rem;
+    background-color: var(--footer-bg-color);
+   
+}
+footer h2{
+    font-size: 1.188rem;
+}
+footer a {
+    color: var(--text-sec-color);
+    
+}
+footer p {
+    color: var(--text-sec-color);
+}
+.footer__img{
+    width: 10%;
+}
+
+.footer__img img{
+    width: 100%;
+    margin-bottom: 2.469rem;
+}
+footer a{
+    line-height: 2.375rem;
+}
+.footer__contact {
+  padding: 1rem;
+}
+.footer__contact i{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+/*media for footer**********************************************************************************/
